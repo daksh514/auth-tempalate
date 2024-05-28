@@ -24,7 +24,7 @@ export const {
     },
     callbacks: {
         async session({ token, session }) {
-            console.log("session token: ", token);
+            // console.log("session token: ", token);
 
             if (token.role && session.user) {
                 session.user.role = token.role as "ADMIN" | "USER"
